@@ -11,5 +11,8 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js"
+  },
+  "dependencies": {
+    "webdriverio-testing-library": "^1.1.3"
   }
 }
