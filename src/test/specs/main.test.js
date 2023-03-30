@@ -55,3 +55,42 @@ describe('Test for feedback', () =>{
     
     })
 })
+
+describe('Rooms', () => {
+
+    
+    it('Checkings titles', async () => {
+        await expect(MainPage.titleRooms).toBeDisplayed()
+        await expect(MainPage.titleSingle).toBeDisplayed()
+    })
+
+    it('Checking pictures', async () => {
+        await expect(MainPage.roomsPic).toBeDisplayed()
+    })
+
+    it('Checking pictures', async () => {
+        await expect(MainPage.iconMan).toBeDisplayed()
+    })
+
+    it('Checking pictures', async () => {
+        await expect(MainPage.singleBlock).toHaveTextContaining(text.singleBlock)
+    })
+
+    it('Checking  button "Book this room"', async () => {
+        await expect(MainPage.bookThisRoomButton).toBeDisplayed()
+    })
+
+    it('Checking  "TV" item', async () => {
+        await expect(MainPage.tvItem).toBeDisplayed()
+    })
+
+    it('Checking  "WiFi" item', async () => {
+        await expect(MainPage.wififItem).toBeDisplayed()
+    })
+
+    it('Checking "Safe" item', async () => {
+        await expect(MainPage.saveItem).toBeDisplayed()
+    })
+
+
+})
