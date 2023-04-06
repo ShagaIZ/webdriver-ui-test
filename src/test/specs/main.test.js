@@ -19,7 +19,7 @@ describe('Common tests', () => {
     })
 })
 
-describe('Test for feedback', () =>{
+describe('Feedback', () =>{
     
     it('Validate "Name" field', async () => {
         await expect(MainPage.iconNameField).toBeDisplayed()
@@ -56,6 +56,34 @@ describe('Test for feedback', () =>{
     })
 })
 
+
+describe('Contacts', () =>{
+    
+    it('Validate name comapny text and icon', async () => {
+        await expect(MainPage.nameCompany).toBeDisplayed()
+        await expect(MainPage.iconNameCompany).toBeDisplayed()
+    })
+
+    it('Validate address comapny text', async () => {
+        await expect(MainPage.addressCompany).toBeDisplayed()
+      
+    
+    })
+
+    it('Validate phone number comapny text and icon', async () => {
+        await expect(MainPage.phoneNumberCompany).toBeDisplayed()
+        await expect(MainPage.iconPhoneNumberCompany).toBeDisplayed()
+    
+    })
+
+    it('Validate email comapny text and icon', async () => {
+        await expect(MainPage.emailCompany).toBeDisplayed()
+        await expect(MainPage.iconEmailCompany).toBeDisplayed()
+    
+    })
+   
+})
+
 describe('Rooms', () => {
 
     
@@ -68,11 +96,11 @@ describe('Rooms', () => {
         await expect(MainPage.roomsPic).toBeDisplayed()
     })
 
-    it('Checking pictures', async () => {
+    it('Checking icon man', async () => {
         await expect(MainPage.iconMan).toBeDisplayed()
     })
 
-    it('Checking pictures', async () => {
+    it('Checking text of single block', async () => {
         await expect(MainPage.singleBlock).toHaveTextContaining(text.singleBlock)
     })
 
@@ -91,6 +119,5 @@ describe('Rooms', () => {
     it('Checking "Safe" item', async () => {
         await expect(MainPage.saveItem).toBeDisplayed()
     })
-
 
 })
