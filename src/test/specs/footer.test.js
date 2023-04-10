@@ -1,5 +1,6 @@
-import MainPage from '../../common/pageObjects/main.page.js'
-import { text } from '../../common/data/mainData.js'
+import FooterBlock from '../../common/pageObjects/mainPage/blocks/footer.block.js'
+
+
 
 
 beforeEach(async()=>{
@@ -9,41 +10,41 @@ beforeEach(async()=>{
 describe('Footer', () => {
    
     it('Checking map picture', async () => {
-        await expect(MainPage.mapPicture).toBeDisplayed()
+        await expect(FooterBlock.mapPicture).toBeDisplayed()
     })
 
     it('Checking footer text block', async () => {
-        await expect(MainPage.footerTextBlock).toBeDisplayed()
+        await expect(FooterBlock.footerTextBlock).toBeDisplayed()
     })
 
     it('Checking "Mark Winteringham" text and link', async () => {
-        await expect(MainPage.mark).toBeDisplayed()
-        await expect(MainPage.mark).toHaveLink('http://www.mwtestconsultancy.co.uk')
+        await expect(FooterBlock.mark).toBeDisplayed()
+        await expect(FooterBlock.mark).toHaveLink('http://www.mwtestconsultancy.co.uk')
     })
 
     it('Checking "Richard Bradshaw" text and link', async () => {
-        await expect(MainPage.richard).toBeDisplayed()
-        await expect(MainPage.richard).toHaveLink('https://thefriendlytester.co.uk/')
+        await expect(FooterBlock.richard).toBeDisplayed()
+        await expect(FooterBlock.richard).toHaveLink('https://thefriendlytester.co.uk/')
     })
 
     it('Checking "Cookie-Policy" text and link', async () => {
-        await expect(MainPage.cookie).toBeDisplayed()
-        await expect(MainPage.cookie).toHaveLink('/#/cookie')
+        await expect(FooterBlock.cookie).toBeDisplayed()
+        await expect(FooterBlock.cookie).toHaveLink('/#/cookie')
     })
 
     it('Checking "Privacy-Policy" text and link', async () => {
-        await expect(MainPage.privacy).toBeDisplayed()
-        await expect(MainPage.privacy).toHaveLink('/#/privacy')
+        await expect(FooterBlock.privacy).toBeDisplayed()
+        await expect(FooterBlock.privacy).toHaveLink('/#/privacy')
     })
 
     it('Checking "Admin panel" text and link', async () => {
-        await expect(MainPage.admin).toBeDisplayed()
-        await expect(MainPage.admin).toHaveLink('/#/admin')
+        await expect(FooterBlock.admin).toBeDisplayed()
+        await expect(FooterBlock.admin).toHaveLink('/#/admin')
     })
 
     it('Checking " Automation in Testing" text and link', async () => {
-        await expect(MainPage.automation).toBeDisplayed()
-        await expect(MainPage.automation).toHaveLink('https://automationintesting.com')
+        await expect(FooterBlock.automation).toBeDisplayed()
+        await expect(FooterBlock.automation).toHaveLink('https://automationintesting.com')
     })
 
    
