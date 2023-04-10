@@ -104,7 +104,38 @@
     get iconPhoneNumberCompany(){
         return $('div.container-fluid div.row.contact:nth-child(5) div.col-sm-5:nth-child(3) p:nth-child(3) > span.fa.fa-phone')
     }
-    
+
+    get mapPicture(){
+        return $('[class="map"]')
+    }
+
+    get footerTextBlock(){
+        return $('[class="text-muted"]')
+    }
+
+    get mark(){
+        return $('a=Mark Winteringham')
+    }
+
+    get richard(){
+        return $('a=Richard Bradshaw')
+    }
+
+    get cookie(){
+        return $('a=Cookie-Policy')
+    }
+
+    get privacy(){
+        return $('a=Privacy-Policy')
+    }
+
+    get admin(){
+        return $('a=Admin panel')
+    }
+
+    get automation(){
+        return $('a=Automation in Testing')
+    }
    
 }
 
