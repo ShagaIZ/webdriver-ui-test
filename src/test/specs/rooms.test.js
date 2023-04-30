@@ -1,11 +1,12 @@
 import RoomsBlock from '../../common/pageObjects/mainPage/blocks/rooms.block.js'
 import { text } from '../../common/data/mainData.js'
+import { urls } from '../../common/urls.js'
 
 
 
 
 beforeEach(async()=>{
-    await browser.url('https://automationintesting.online/#/')
+    await browser.url(urls.mainPage)
 })
 
 describe('Rooms', () => {

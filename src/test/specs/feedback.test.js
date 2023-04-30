@@ -1,10 +1,11 @@
 import FeedbackBlock from '../../common/pageObjects/mainPage/blocks/feedback.block.js'
+import { urls } from '../../common/urls.js'
 
 
 
 
 beforeEach(async()=>{
-    await browser.url('https://automationintesting.online/#/')
+    await browser.url(urls.mainPage)
 })
 
 describe('Feedback', () =>{
