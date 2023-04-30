@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install dependency') {
             steps {
-                sh 'npm install'
+                sh 'npm install --verbose'
             }
         } 
         stage('Run tests') {
