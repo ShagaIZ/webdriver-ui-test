@@ -1,10 +1,11 @@
 import ContactsBlock from '../../common/pageObjects/mainPage/blocks/contacts.block.js'
+import { urls } from '../../common/urls.js'
 
 
 
 
 beforeEach(async()=>{
-    await browser.url('https://automationintesting.online/#/')
+    await browser.url(urls.mainPage)
 })
 
 describe('Contacts', () =>{
