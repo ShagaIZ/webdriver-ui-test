@@ -7,11 +7,6 @@ pipeline {
                 sh 'npm install'
             }
         } 
-        stage('Install browsers') {
-            steps {
-                sh 'npx playwright install'
-            }
-        }
         stage('Run tests') {
             steps {
                 sh 'npm run wdio'
