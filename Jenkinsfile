@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Install dependency') {
             steps {
-                sh 'npm install --verbose'
+                bat 'npm install --verbose'
             }
         } 
         stage('Run tests') {
             steps {
-                sh 'npm run wdio'
+                bat 'npm run wdio'
             }
         } 
         stage('Allure report') {
